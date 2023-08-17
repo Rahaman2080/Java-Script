@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bank account Recap</title>
+</head>
+<body class="bg-green-300">
+    <header>
+        <h1 class="mt-7 text-center text-xl lg:text-3xl font-sans font-bold text-purple-800"><span class="text-4xl lg:text-6xl font-semibold text-purple-800">W</span>elcome to our <span class="text-rose-600">"E-Banking Service!!!"</span></h1>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 w-9/12 mx-auto text-purple-800">
+                <div class="bg-green-500 p-8 rounded-xl drop-shadow-2xl">
+                    <h4 class="text-xl">Total Deposit:</h4>
+                    <h2 class="text-4xl">Tk-<span id="deposit-total">00</span></h2>
+                </div>
+                <div class="bg-amber-400 p-8 rounded-xl drop-shadow-2xl">
+                    <h4 class="text-xl">Total Withdrow:</h4>
+                    <h2 class="text-4xl">Tk-<span id="withdraw-total">00</span></h2>
+                </div>
+                <div class="bg-red-400 p-8 rounded-xl drop-shadow-2xl">
+                    <h4 class="text-xl">Total Balance:</h4>
+                    <h2 class="text-4xl">Tk-<span id="balance-total">1000</span></h2>
+                </div>
+    
+            </div>
+        </section>
+        <!-- deposit and withdraw field -->
+    <section class="mt-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 w-9/12 mx-auto">
+            <div class="bg-fuchsia-500 p-8 rounded-xl drop-shadow-2xl">
+                <h4 class="text-xl mb-4 font-bold text-white">Please Deposit:</h4>
+                <input id="deposit-field" class=" w-40 md:w lg:w-9/12 block mb-4 px-3 py-2 rounded-lg" type="text" name="" placeholder="Tk-deposit amount" >
+                <button id="btn-deposit" class="bg-purple-800 hover:bg-green-800 px-8 py-2 text-white font-medium rounded-lg">Deposit</button>
+            </div>
+            <div class="bg-sky-500 p-8 rounded-xl drop-shadow-2xl">
+                <h4 class="text-xl mb-4 font-bold text-white">Please Withdrow:</h4>
+                <input id="withdraw-field" class="w-40 lg:w-9/12 block mb-4 px-3 py-2 rounded-lg" type="text" name="" placeholder="Tk-withdraw amount" >
+                <button id="btn-withdraw" class="bg-purple-800 hover:bg-green-800 px-8 py-2 text-white font-medium rounded-lg">Withdraw</button>
+            </div>
+        </div>
+    </section>    
+    </main>
+    <script src="utilities.js"></script>
+    <script src="deposit.js"></script>
+    <script src="withdraw.js"></script>
+</body>
+</html>

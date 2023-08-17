@@ -1,0 +1,12 @@
+const sections = document.querySelectorAll('section');
+for(const section of sections){
+    section.style.border= '5px solid green';
+    section.style.borderRadius = '15px';
+    section.style.margin = '30px';
+    section.style.paddingLeft ='10px';
+    section.style.backgroundColor ='lightgray';
+}
+
+const placeContainer = document.getElementById('places-container');
+placeContainer.style.textAlign ='center';
+placeContainer.style.backgroundColor = 'yellow';

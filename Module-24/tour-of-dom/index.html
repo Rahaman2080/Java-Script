@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of DOM</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to my DOM</h1>
+    </header>
+    <main>
+        <section>
+            <h1>Do you know what is DOM?</h1>
+        <ul>
+            <li>DOM means Document Object Model</li>
+            <li>The events for all HTML elements</li>
+            <li>The methods to access all HTML elements</li>
+            <li>The properties of all HTML elements</li>
+            <li>All HTML elements as objects</li>
+        </ul>
+        </section>
+        <section id="places-container">
+            <h1>Places i visited</h1>
+            <ul>
+                <li>Rangamait</li>
+                <li>Bandorban</li>
+                <li>Cox's Bazar</li>
+                <li>Sylhet</li>
+                <li>Saint Martin</li>
+            </ul>
+        </section>
+       <section>
+        <h1>What can do JavaScript with DOM</h1>
+        <ul>
+            <li><h3>JavaScript can change all the HTML elements in the page</h3></li>
+        <li><h3>It can change all the HTML attributes in the page</h3></li>
+        <li><h3>JavaScript can change all the CSS styles in the page</h3></li>
+        <li><h3>JavaScript can remove existing HTML elements and attributes</h3></li>
+        <li><h3>JavaScript can add new HTML elements and attributes</h3></li>
+        <li><h3>JavaScript can react to all existing HTML events in the pages</h3></li>
+        </ul>
+       </section>
+    </main>
+    <script src="JS/dom.js"></script>
+    <script>
+        const liCollection = document.getElementsByTagName('li');
+        for(const li of liCollection){
+            // console.log(li.innerText);
+        }
+    </script>
+    <script src="JS/styleInJs.js"></script>
+</body>
+</html>

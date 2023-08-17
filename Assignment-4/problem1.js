@@ -3,7 +3,8 @@ function cubeNumber(number) {
         return 'Please provide a number';
     }
     else{
-        const cube = Math.pow(number, 3);
+        // const cube = Math.pow(number, 3);
+        const cube = number*number*number;
         return cube;
     }
 }

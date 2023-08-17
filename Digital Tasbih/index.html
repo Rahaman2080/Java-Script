@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+
+    <title>Digital Tasbih</title>
+    <style>
+      body{
+        margin:0;
+        padding: 0;
+      }
+    </style>
+</head>
+<body>
+<h1 class="text-center my-12 font-extrabold text-violet-800 text-4xl">Digital Tasbih</h1>
+<marquee behavior="" direction="">নিয়মিত তাসবীহ পড়া উত্তম। এতে আল্লাহর সন্তুষ্টি লাভ হয় এবং অন্তর প্রশান্তি লাভ করে।</marquee>
+    <section class="mx-5 lg:mx-auto my-5 lg:my-10 grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+     <!-- Subhanallah card -->
+      <div class="card w-86 bg-[#4ade80] shadow-xl">
+        <div class="card-body items-center text-center">
+            <h2 class="card-title mb-3 text-violet-800">সুবহানাল্লাহ</h2>
+            <p id="subhanallahDisplay" class="block text-4xl mb-3 ">0</p>
+        <div class="card-actions">
+        <button id="subhanallahIncrementBtn" class="btn btn-sm btn-primary">বৃদ্ধি করুন</button>
+        <button id="subhanallahDecrementBtn" class="btn btn-sm btn-primary">হ্রাস করুন</button>
+      </div>
+    </div>
+  </div>
+<!-- Alhamdulillah card -->
+  <div class="card w-86 bg-[#4ade80] shadow-xl">
+    <div class="card-body items-center text-center">
+        <h2 class="card-title text-violet-800">আলহামদুলিল্লাহ</h2>
+        <p id="alhamdulillahDisplay" class="block text-4xl mb-3">0</p>
+    <div class="card-actions">
+    <button id="alhamdulillahIncrementBtn" class="btn btn-sm btn-primary">বৃদ্ধি করুন</button>
+    <button id="alhamdulillahDecrementBtn" class="btn btn-sm btn-primary">হ্রাস করুন</button>
+  </div>
+</div>
+</div>
+<!-- AllahuAkbar card -->
+<div class="card w-86 bg-[#4ade80] shadow-xl">
+  <div class="card-body items-center text-center">
+      <h2 class="card-title text-violet-800">আল্লাহুআকবর</h2>
+      <p id="AllahuAkbarDisplay" class="block text-4xl mb-3">0</p>
+  <div class="card-actions">
+  <button id="allahuAkbarIncrementBtn" class="btn btn-sm btn-primary">বৃদ্ধি করুন</button>
+  <button id="allahuAkbarDecrementBtn" class="btn btn-sm btn-primary">হ্রাস করুন</button>
+</div>
+</div>
+</div>
+    </section>
+<!-- Reset button -->
+    <div class="resetContainer flex justify-center">
+      <button id="resetBtn" class="btn btn-sm btn-primary text-center text-white align-middle">তাসবীহগুলো মুচুন</button>
+    </div>
+
+    
+  <script src="index.js"></script>
+</body>
+</html>
